@@ -1,0 +1,230 @@
+@import url('./Ysabeau_Infant/YsabeauInfant-SemiBold.ttf');
+*{
+    margin:0;
+    padding:0;
+    color:#172337;
+    transition: all ease 0.3s;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/* Root */
+:root{
+    --color1:black;
+    --border:white;
+    --bg-btn:white;
+}
+button{
+    cursor:pointer;
+}
+button:hover{
+    transform:translateY(-4px);
+}
+.body{
+    width:1500px;
+    margin:auto;
+}
+/* Global classes */
+li{
+    list-style:none;
+}
+.font-12{
+    font-size:12px;
+}
+.font-14{
+    font-size:14px;
+}
+.font-16{
+    font-size:16px;
+}
+.font-18{
+    font-size:18px;
+}
+.font-20{
+    font-size:20px;
+}
+.font-22{
+    font-size:22px;
+}
+.text-center{
+    text-align:center;
+}
+.d-flex{
+    display:flex;
+}
+.align-center{
+    align-items:center;
+}
+.justify-space{
+    justify-content:space-between;
+}
+/* Global classes */
+
+/* Navbar */
+nav{
+    width:100%;
+    height:65px;
+    background:var(--color1);
+    align-items:center;
+    display:flex;
+    position:fixed;
+}
+.navbar{
+    width:1500px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 25% 65% 20%;
+}
+.navbar .nav_logo h2{
+    color:white;
+}
+.input_search{
+    display:none;
+    padding:8px 10px;
+    border: 1px solid #ccc;
+    max-width:610px;
+    background:#fff;
+}
+.input_search input{
+    width:100%;
+    border:none;
+    outline:none;
+}
+.nav_li{
+    width:100%;
+    min-width:650px;
+}
+.nav_li ul{
+    margin:auto;
+    width:100%;
+    min-width:650px;
+}
+.nav_li ul li:hover{
+    transform:translateY(-4px);
+}
+.nav_li ul li a{
+    text-decoration:none;
+    margin: 0 20px;
+    color:white;
+    font-size:16px;
+}
+#search{
+    font-size:18px;
+    display:inline-flex;
+    background:#fff;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+}
+.nav_btn button{
+    padding:8px 20px;
+    background:var(--bg-btn);
+    border:1px solid var(--border);
+    color:black;
+    font-weight:750;
+    margin-left:10px;
+}
+.nav_btn button:first-child{
+    background:transparent;
+    color:white;
+}
+/* Navbar */
+
+/* Home */
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    height:100%;
+    min-height:950px;
+}
+.img, .img img{
+    width:100%;  
+    border-radius:30px;
+}
+.inner{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.inner h1{
+    font-size:70px;
+    color:var(--color1);
+    text-shadow:1px 1px 1px grey;
+}
+.inner p{
+    width:80%;
+    font-weight:600;
+    margin:0px 0;
+}
+.inner span{
+    color:orangered;
+}
+.inner button{
+    padding:10px 25px;
+    border: 1px solid var(--border);
+    background:var(--color1);
+    font-size:16px;
+    color:#fff;
+    margin-top:20px;
+    border-radius:2px;
+}
+.products-overview{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    min-height:500px;
+}
+.products{
+    margin-top:60px;
+    margin-bottom:50px;
+}
+.products-overview .img{
+    background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)) ,url('../img/phone.webp');
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.products-overview .img-watch{
+    background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)) ,url('../img/Watch.webp');
+    background-size:100%;
+    background-position:center;
+    border-radius:40px;
+    background-repeat:no-repeat;
+}
+.products-overview .img-accessories{
+    background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)) ,url('../img/accessories.webp');
+    background-size:100%;
+    background-position:center;
+    border-radius:40px;
+    background-repeat:no-repeat;
+}
+.product-text{
+    display:grid;
+    grid-template-columns:auto;
+}
+.product-text-2{
+    display:grid;
+    grid-template-columns:auto auto;
+    justify-content:center;
+}
+.inner img{
+    width:150px;
+    height:auto;
+    margin:0 20px;
+    height:150px;
+    /* object-fit:cover; */
+}
+.head{
+    margin:30px 0;
+}
+.head span, .products-overview .text, h4, .products-overview .text a{
+    color:orangered;
+    margin:7px 0;
+}
+.products .product-text-2 h4, a{
+    color:orangered;
+    margin:7px 0;
+}
+.products-overview{
+    margin-bottom:30px;
+}
+/* Home */
